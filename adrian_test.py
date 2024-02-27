@@ -43,7 +43,6 @@ st.altair_chart(alt.Chart(df, height=700, width=700)
 st.write("Estadística de goles de Messi")
 
 # Cargar los datos desde la página web
-pagina = 'https://players.fcbarcelona.com/es/jugador/548-messi-lionel-andres-messi-cuccitini'
-tablas = pd.read_html(pagina)
-st.write(tablas[0].head(5))
+tablas = pd.read_html('https://players.fcbarcelona.com/es/jugador/548-messi-lionel-andres-messi-cuccitini')
+st.write(tablas[0])
 
