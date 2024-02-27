@@ -43,6 +43,12 @@ st.altair_chart(alt.Chart(df, height=700, width=700)
 st.write("Estadística de goles de Messi")
 
 # Cargar los datos desde la página web
-tablas = pd.read_html('https://players.fcbarcelona.com/es/jugador/548-messi-lionel-andres-messi-cuccitini')
-st.write(tablas[0])
+#tablas = pd.read_html('https://players.fcbarcelona.com/es/jugador/548-messi-lionel-andres-messi-cuccitini')
+#st.write(tablas[0])
+
+st.write (pd.DataFrame({'Temas': ['Python y redes neuronales artificiales',
+                                  'Procesamiento de Lenguaje Natural', 
+                                  'Llama 2 y ChatGPT','IA generadora de imágenes'], 
+                        'Horas': ["2", "2", 
+                                   "2", "2"]}))
 
