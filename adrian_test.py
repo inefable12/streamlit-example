@@ -10,8 +10,11 @@ def inicio():
 
 def numpy():
     st.title("Numpy")
-    st.write("Aquí encontrarás contenido relacionado con la tecnología.")
-    # Puedes agregar contenido adicional aquí
+    st.write("¿Cuál es la diferencia entre np.array y np.arange en NumPy?")
+    st.write("Respuesta: np.array se utiliza para crear un array NumPy a partir de una secuencia de elementos, mientras que np.arange genera un array NumPy con valores espaciados uniformemente dentro de un rango especificado.")
+    st.write("¿Cómo se puede realizar la multiplicación de matrices en NumPy? Proporcione un ejemplo.")
+    st.write("Respuesta: La multiplicación de matrices en NumPy se realiza utilizando la función np.dot o el operador @. Por ejemplo:")
+    st.code("print('¡Hola mundo!')", language='python')
 
 def pandas():
     st.title("Pandas")
@@ -34,8 +37,6 @@ def evaluacion():
         """,
         height=600,
     )
-
-#https://docs.google.com/forms/d/e/1FAIpQLSc3N9Lanr3N0tkoHmHM8ClTgbM3B-Tpwk7m7XwveeuylYskkA/viewform?usp=sf_link
 
 def main():
     st.sidebar.title("Verano 2024")
