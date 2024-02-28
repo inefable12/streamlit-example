@@ -36,7 +36,7 @@ def evaluacion():
 
 def main():
     st.sidebar.title("Verano 2024")
-    selection = st.sidebar.radio("Ir a:", ["Inicio", "Numpy", "Pandas", "Matplotlib", "Evaluación])
+    selection = st.sidebar.radio("Ir a:", ["Inicio", "Numpy", "Pandas", "Matplotlib", "Evaluación"])
     st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/9/9c/Alan_Turing_in_watercolour.png",
                  caption="Acuarela de Alan Turing, generada mediante inteligencia artificial, considerado el padre de la misma")
 
