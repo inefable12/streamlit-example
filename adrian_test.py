@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 from PIL import Image
 
 def inicio():
@@ -50,7 +51,7 @@ def matplotlib():
     y = [2, 4, 6, 8, 10]
     
     fig, ax = plt.subplots()
-    plt.plot(x, y)
+    ax.plot(x, y)
     plt.title('Gráfico de ejemplo')
     plt.xlabel('Eje X')
     plt.ylabel('Eje Y')
@@ -79,7 +80,7 @@ def evaluacion():
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3N9Lanr3N0tkoHmHM8ClTgbM3B-Tpwk7m7XwveeuylYskkA/viewform?usp=sf_link" 
                 width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
         """,
-        height=600,
+        height=600
     )
 
 def main():
