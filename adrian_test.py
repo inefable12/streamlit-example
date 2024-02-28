@@ -79,7 +79,7 @@ def evaluacion():
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3N9Lanr3N0tkoHmHM8ClTgbM3B-Tpwk7m7XwveeuylYskkA/viewform?usp=sf_link" 
                 width="640" height="480" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
         """,
-        height=600
+        height=600,
     )
 
 def main():
