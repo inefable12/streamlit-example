@@ -32,7 +32,7 @@ def matplotlib():
     # Puedes agregar contenido adicional aquí
 
 def evaluacion():
-    st.title('Formulario de Google')
+    st.title('Evaluaciòn')
 
     # Inserta el código HTML del formulario de Google
     st.components.v1.html(
