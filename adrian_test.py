@@ -30,8 +30,9 @@ def pandas():
     st.write("**¿Cómo se pueden eliminar filas duplicadas en un DataFrame de Pandas?**")
     st.write("Respuesta: Se puede utilizar el método drop_duplicates() para eliminar filas duplicadas en un DataFrame. Por ejemplo:")
     st.code("""import pandas as pd 
-    
-    df = pd.DataFrame({'A': [1, 2, 2, 3], 'B': ['a', 'b', 'b', 'c']}) \ df_sin_duplicados = df.drop_duplicates() \ print(df_sin_duplicados)""")
+    df = pd.DataFrame({'A': [1, 2, 2, 3], 'B': ['a', 'b', 'b', 'c']})
+    df_sin_duplicados = df.drop_duplicates()
+    print(df_sin_duplicados)""")
 
 def matplotlib():
     st.title("Matplotlib")
