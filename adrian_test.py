@@ -4,9 +4,9 @@ import numpy as np
 from PIL import Image
 
 def inicio():
-    st.title("Página de Inicio")
-    st.write("¡Bienvenido a nuestra página de inicio sobre tecnología!")
-    # Puedes agregar contenido adicional aquí
+    st.title("Herramientas computacionales básicas")
+    st.write("Descubre cómo extraer información de páginas web, evaluar el rendimiento de futbolistas, etc")
+    st.image("https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b")
 
 def numpy():
     st.title("Numpy")
