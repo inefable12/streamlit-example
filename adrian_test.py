@@ -56,6 +56,7 @@ def matplotlib():
     plt.show()
 
     """)
+    st.write("Esto da como resultado:")
 
 def evaluacion():
     st.title('Evaluación')
