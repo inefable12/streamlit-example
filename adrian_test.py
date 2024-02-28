@@ -70,6 +70,15 @@ def matplotlib():
     ax.hist(arr, bins=20)
     
     st.pyplot(fig)
+    
+    st.altair_chart(alt.Chart(df, height=700, width=700)
+    .mark_point(filled=True)
+    .encode(
+        x=alt.X("x", axis=None),
+        y=alt.Y("y", axis=None),
+        color=alt.Color("idx", legend=None, scale=alt.Scale()),
+        size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
+    ))
 
 def evaluacion():
     st.title('Evaluación')
