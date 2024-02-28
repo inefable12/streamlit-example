@@ -36,10 +36,10 @@ def pandas():
     df_sin_duplicados = df.drop_duplicates()
     print(df_sin_duplicados)
     """)
-    st.write("Inicio:")
+    st.write("Tabla inicial:")
     df = pd.DataFrame({'A': [1, 2, 2, 3], 'B': ['a', 'b', 'b', 'c']})
     st.write(df)
-    st.write("Esto da como resultado:")
+    st.write("Luego de aplicar 'drop' obtenemos:")
     df_sin_duplicados = df.drop_duplicates()
     print(df_sin_duplicados)
 
