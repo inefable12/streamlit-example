@@ -54,7 +54,7 @@ def matplotlib():
     
     x = [1, 2, 3, 4, 5]
     y = [2, 4, 6, 8, 10]
-    
+    df = pd.DataFrame(x,y) ({'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]})
     fig, ax = plt.subplots()
     ax.scatter(x, y)
     plt.title('Gráfico de ejemplo')
@@ -63,12 +63,14 @@ def matplotlib():
     st.pyplot(fig)
 
     """)
-    st.write("Esto da como resultado:")
+    st.write("Esto da como resultado:")  
 
-    arr = np.random.normal(1, 1, size=100)
+    df = pd.DataFrame(x,y) ({'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]})
     fig, ax = plt.subplots()
-    ax.hist(arr, bins=20)
-    
+    ax.scatter(x, y)
+    plt.title('Gráfico de ejemplo')
+    plt.xlabel('Eje X')
+    plt.ylabel('Eje Y')
     st.pyplot(fig)
     
     st.altair_chart(alt.Chart(df, height=700, width=700)
