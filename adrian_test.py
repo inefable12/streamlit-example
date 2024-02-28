@@ -11,6 +11,9 @@ def inicio():
     st.code("st.code(url de la imagen)")
     st.image("https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b")
 
+    st.write("Inserta tu url de una imagen:")
+    st.image("https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg")
+
 def numpy():
     st.title("Numpy")
     st.write("**¿Cuál es la diferencia entre np.array y np.arange en NumPy?**")
