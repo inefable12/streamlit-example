@@ -12,9 +12,9 @@ def inicio():
 
 def numpy():
     st.title("Numpy")
-    st.write("¿Cuál es la diferencia entre np.array y np.arange en NumPy?")
+    st.write("**¿Cuál es la diferencia entre np.array y np.arange en NumPy?**")
     st.write("Respuesta: np.array se utiliza para crear un array NumPy a partir de una secuencia de elementos, mientras que np.arange genera un array NumPy con valores espaciados uniformemente dentro de un rango especificado.")
-    st.write("¿Cómo se puede realizar la multiplicación de matrices en NumPy? Proporcione un ejemplo.")
+    st.write("**¿Cómo se puede realizar la multiplicación de matrices en NumPy?** Proporcione un ejemplo.")
     st.write("Respuesta: La multiplicación de matrices en NumPy se realiza utilizando la función np.dot o el operador @. Por ejemplo:")
     st.code("import numpy as np", language='python')
     st.code("A = np.array([[1, 2], [3, 4]])", language='python')
