@@ -39,8 +39,9 @@ def pandas():
 
 def matplotlib():
     st.title("Matplotlib")
-    st.write("Síguenos en nuestras redes sociales para mantenerte actualizado.")
-    # Puedes agregar contenido adicional aquí
+    st.write("**¿Cuál es la diferencia entre plt.plot() y plt.scatter() en Matplotlib?**")
+    st.write("Respuesta: plt.plot() se utiliza para trazar líneas o curvas conectando los puntos de datos, mientras que plt.scatter() se utiliza para trazar puntos de datos individuales sin conectarlos con líneas.")
+
 
 def evaluacion():
     st.title('Evaluación')
