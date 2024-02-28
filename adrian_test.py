@@ -36,6 +36,13 @@ def pandas():
     df_sin_duplicados = df.drop_duplicates()
     print(df_sin_duplicados)
     """)
+    st.write("Inicio:")
+    df = pd.DataFrame({'A': [1, 2, 2, 3], 'B': ['a', 'b', 'b', 'c']})
+    print(df)
+    st.write("Esto da como resultado:")
+    df_sin_duplicados = df.drop_duplicates()
+    print(df_sin_duplicados)
+
 
 def matplotlib():
     st.title("Matplotlib")
