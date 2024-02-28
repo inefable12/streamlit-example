@@ -69,7 +69,10 @@ def matplotlib():
     #st.write(ds)
     x = [1, 2, 3, 4, 5]
     y = [2, 4, 6, 8, 10]
-    df = pd.DataFrame({"x": x,"y": y,"idx": indices,"rand": np.random.randn(num_points),})
+    indices = np.linspace(0, 1, num_points)
+    theta = 2 * np.pi * num_turns * indices
+    radius = indices
+    df = pd.DataFrame({"x": x,"y": y,"idx": indices,"rand": np.random.randn(num_points),})   
     
     st.altair_chart(alt.Chart(df, height=700, width=700)
         .mark_point(filled=True)
