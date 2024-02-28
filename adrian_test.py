@@ -64,7 +64,7 @@ def matplotlib():
     y = [2, 4, 6, 8, 10]
     
     fig, ax = plt.subplots()
-    plt.plot(x, y)
+    ax.plot(x, y)
     plt.title('Gráfico de ejemplo')
     plt.xlabel('Eje X')
     plt.ylabel('Eje Y')
