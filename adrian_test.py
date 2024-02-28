@@ -39,7 +39,7 @@ def pandas():
     st.write("Tabla inicial:")
     df = pd.DataFrame({'A': [1, 2, 2, 3], 'B': ['a', 'b', 'b', 'c']})
     st.write(df)
-    st.write("Luego de aplicar 'drop' obtenemos:")
+    st.write("Luego de aplicar el código anterior obtenemos:")
     df_sin_duplicados = df.drop_duplicates()
     st.write(df_sin_duplicados)
 
@@ -75,7 +75,7 @@ def matplotlib():
     plt.title('Gráfico de ejemplo')
     plt.xlabel('Eje X')
     plt.ylabel('Eje Y')
-    st.pyplot(fig)
+    st.write(fig)
 
 def evaluacion():
     st.title('Evaluación')
