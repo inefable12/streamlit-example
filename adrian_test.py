@@ -66,16 +66,8 @@ def matplotlib():
     st.write("Esto da como resultado:")
 
     import matplotlib.pyplot as plt
-    
-    x = [1, 2, 3, 4, 5]
-    y = [2, 4, 6, 8, 10]
-    
-    fig, ax = plt.subplots()
-    ax.plot(x, y)
-    plt.title('Gráfico de ejemplo')
-    plt.xlabel('Eje X')
-    plt.ylabel('Eje Y')
-    st.area_chart(fig)
+    df = pd.DataFrame(np.random.randn(10, 2), columns=["prices","diff"])
+    st.area_chart(df)
 
 def evaluacion():
     st.title('Evaluación')
