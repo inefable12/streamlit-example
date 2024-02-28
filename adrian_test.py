@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from PIL import Image
 
 def inicio():
@@ -59,6 +58,8 @@ def matplotlib():
 
     """)
     st.write("Esto da como resultado:")
+
+    import matplotlib.pyplot as plt
     
     x = [1, 2, 3, 4, 5]
     y = [2, 4, 6, 8, 10]
