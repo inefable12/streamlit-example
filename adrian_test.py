@@ -67,12 +67,6 @@ def matplotlib():
     st.write("Esto da como resultado:")  
 
     df = pd.DataFrame(x,y) ({'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]})
-    fig, ax = plt.subplots()
-    ax.scatter(x, y)
-    plt.title('Gráfico de ejemplo')
-    plt.xlabel('Eje X')
-    plt.ylabel('Eje Y')
-    st.pyplot(fig)
     
     st.altair_chart(alt.Chart(df, height=700, width=700)
     .mark_point(filled=True)
