@@ -6,7 +6,7 @@ from PIL import Image
 def inicio():
     #st.title("Herramientas computacionales básicas")
     st.markdown("<h1 style='text-align: center;'>Herramientas computacionales básicas</h1>", unsafe_allow_html=True)
-    st.write("Descubre cómo extraer información de páginas web, evaluar el rendimiento de futbolistas u obtener imágenes mediante un simple código como:")
+    st.write("Descubre cómo extraer información de páginas web, evaluar el rendimiento de futbolistas u obtener imágenes mediante código simple, como por ejemplo:")
     st.code("st.code(url de la imagen)")
     st.image("https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b")
 
