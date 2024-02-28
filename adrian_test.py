@@ -36,7 +36,7 @@ def evaluacion():
 
 def main():
     st.sidebar.title("Verano 2024")
-    selection = st.sidebar.radio("Ir a:", ["Inicio", "Numpy", "Pandas", "Matplotlib", "Evaluación"])
+    selection = st.sidebar.radio("Ir a:", ["Inicio", "Numpy", "Pandas", "Matplotlib", "Evaluacion"])
     st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/9/9c/Alan_Turing_in_watercolour.png",
                  caption="Acuarela de Alan Turing, generada mediante inteligencia artificial, considerado el padre de la misma")
 
@@ -46,7 +46,7 @@ def main():
         numpy()
     elif selection == "Matplotlib":
         matplotlib()
-    elif selection == "Evaluación":
+    elif selection == "Evaluacion":
     evaluacion()
 
 if __name__ == "__main__":
