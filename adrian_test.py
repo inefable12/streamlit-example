@@ -65,10 +65,17 @@ def matplotlib():
 
     """)
     st.write("Esto da como resultado:")  
-    ds = pd.DataFrame(x,y) ({'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]})
-    st.write(ds)
+    #ds = pd.DataFrame(x,y) ({'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]})
+    #st.write(ds)
+    x = [1, 2, 3, 4, 5]
+    y = [2, 4, 6, 8, 10]
+    df = pd.DataFrame({
+    "x": x,
+    "y": y,
+    "idx": indices,
+    "rand": np.random.randn(num_points),})
     
-    st.altair_chart(alt.Chart(ds, height=700, width=700)
+    st.altair_chart(alt.Chart(df, height=700, width=700)
         .mark_point(filled=True)
         .encode(
             x=alt.X("x", axis=None),
