@@ -49,11 +49,12 @@ def matplotlib():
     x = [1, 2, 3, 4, 5]
     y = [2, 4, 6, 8, 10]
     
+    fig, ax = plt.subplots()
     plt.plot(x, y)
     plt.title('Gráfico de ejemplo')
     plt.xlabel('Eje X')
     plt.ylabel('Eje Y')
-    plt.show()
+    st.pyplot(fig)
 
     """)
     st.write("Esto da como resultado:")
