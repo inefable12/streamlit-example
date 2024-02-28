@@ -18,6 +18,8 @@ def redes_sociales():
 def main():
     st.sidebar.title("Navegación")
     selection = st.sidebar.radio("Ir a:", ["Inicio", "Contenido", "Redes Sociales"])
+    st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/9/9c/Alan_Turing_in_watercolour.png",
+                 caption="Bienvenidx")
 
     if selection == "Inicio":
         inicio()
