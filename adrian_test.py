@@ -8,7 +8,7 @@ def inicio():
     st.write("¡Bienvenido a nuestra página de inicio sobre tecnología!")
     # Puedes agregar contenido adicional aquí
 
-def contenido():
+def numpy():
     st.title("Numpy")
     st.write("Aquí encontrarás contenido relacionado con la tecnología.")
     # Puedes agregar contenido adicional aquí
@@ -39,7 +39,7 @@ def evaluacion():
 
 def main():
     st.sidebar.title("Verano 2024")
-    selection = st.sidebar.radio("Ir a:", ["Inicio", "Numpy", "Pandas", "Matplotlib", "Evaluacion"])
+    selection = st.sidebar.radio("Contenido:", ["Inicio", "Numpy", "Pandas", "Matplotlib", "Evaluacion"])
     st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/9/9c/Alan_Turing_in_watercolour.png",
                  caption="Acuarela de Alan Turing, generada mediante inteligencia artificial, considerado el padre de la misma")
 
