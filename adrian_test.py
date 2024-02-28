@@ -65,14 +65,22 @@ def matplotlib():
 
     """)
     st.write("Esto da como resultado:")  
-    #ds = pd.DataFrame(x,y) ({'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]})
-    #st.write(ds)
-    x = [1, 2, 3, 4, 5]
-    y = [2, 4, 6, 8, 10]
+    num_points = st.slider("Number of points in spiral", 1, 10000, 1100)
+    num_turns = st.slider("Number of turns in spiral", 1, 300, 31)
+    
     indices = np.linspace(0, 1, num_points)
     theta = 2 * np.pi * num_turns * indices
     radius = indices
-    df = pd.DataFrame({"x": x,"y": y,"idx": indices,"rand": np.random.randn(num_points),})   
+    
+    x = radius * np.cos(theta)
+    y = radius * np.sin(theta)
+    
+    df = pd.DataFrame({
+        "x": x,
+        "y": y,
+        "idx": indices,
+        "rand": np.random.randn(num_points),
+    })
     
     st.altair_chart(alt.Chart(df, height=700, width=700)
         .mark_point(filled=True)
