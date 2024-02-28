@@ -67,7 +67,7 @@ def matplotlib():
     st.write("Esto da como resultado:")  
 
     df = pd.DataFrame(x,y) ({'x': [1, 2, 3, 4, 5], 'y': [2, 4, 6, 8, 10]})
-    st.write(df
+    st.write(df)
     
     st.altair_chart(alt.Chart(df, height=700, width=700)
     .mark_point(filled=True)
