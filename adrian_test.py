@@ -43,6 +43,19 @@ def matplotlib():
     st.write("Respuesta: plt.plot() se utiliza para trazar líneas o curvas conectando los puntos de datos, mientras que plt.scatter() se utiliza para trazar puntos de datos individuales sin conectarlos con líneas.")
     st.write("**¿Cómo se puede agregar un título y etiquetas de ejes en un gráfico de Matplotlib?**")
     st.write("Respuesta: Se puede agregar un título utilizando plt.title('Título') y etiquetas de ejes con plt.xlabel('Etiqueta X') y plt.ylabel('Etiqueta Y'). Por ejemplo:")
+    st.code("""
+    import matplotlib.pyplot as plt
+    
+    x = [1, 2, 3, 4, 5]
+    y = [2, 4, 6, 8, 10]
+    
+    plt.plot(x, y)
+    plt.title('Gráfico de ejemplo')
+    plt.xlabel('Eje X')
+    plt.ylabel('Eje Y')
+    plt.show()
+
+    """)
 
 def evaluacion():
     st.title('Evaluación')
