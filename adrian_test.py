@@ -25,8 +25,10 @@ def numpy():
 
 def pandas():
     st.title("Pandas")
-    st.write("Síguenos en nuestras redes sociales para mantenerte actualizado.")
-    # Puedes agregar contenido adicional aquí
+    st.write("**¿Cuál es la diferencia entre DataFrame y Series en Pandas?**")
+    st.write("Respuesta: DataFrame es una estructura de datos bidimensional que puede contener múltiples columnas, mientras que Series es una estructura de datos unidimensional que representa una columna en un DataFrame.")
+    st.write("**¿Cómo se pueden eliminar filas duplicadas en un DataFrame de Pandas?**")
+    st.write("Respuesta: Se puede utilizar el método drop_duplicates() para eliminar filas duplicadas en un DataFrame. Por ejemplo:")
 
 def matplotlib():
     st.title("Matplotlib")
