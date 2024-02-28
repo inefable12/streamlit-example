@@ -47,6 +47,8 @@ def main():
         inicio()
     elif selection == "Numpy":
         numpy()
+    elif selection == "Pandas":
+        pandas()
     elif selection == "Matplotlib":
         matplotlib()
     elif selection == "Evaluacion":
