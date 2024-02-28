@@ -75,7 +75,7 @@ def matplotlib():
     plt.title('Gráfico de ejemplo')
     plt.xlabel('Eje X')
     plt.ylabel('Eje Y')
-    st.write(fig)
+    st.area_chart(fig)
 
 def evaluacion():
     st.title('Evaluación')
