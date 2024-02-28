@@ -19,7 +19,7 @@ def main():
     st.sidebar.title("Navegación")
     selection = st.sidebar.radio("Ir a:", ["Inicio", "Contenido", "Redes Sociales"])
     st.sidebar.image("https://upload.wikimedia.org/wikipedia/commons/9/9c/Alan_Turing_in_watercolour.png",
-                 caption="Bienvenidx")
+                 caption="Acuarela de Alan Turing, generada mediante inteligencia artificial, considerado el padre de la misma")
 
     if selection == "Inicio":
         inicio()
