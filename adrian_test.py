@@ -72,9 +72,6 @@ def matplotlib():
     
     fig, ax = plt.subplots()
     ax.scatter(x, y)
-    plt.title('Gráfico de ejemplo')
-    plt.xlabel('Eje X')
-    plt.ylabel('Eje Y')
     st.pyplot(fig)
 
 def evaluacion():
