@@ -41,8 +41,7 @@ def pandas():
     st.write(df)
     st.write("Luego de aplicar 'drop' obtenemos:")
     df_sin_duplicados = df.drop_duplicates()
-    print(df_sin_duplicados)
-
+    st.write(df_sin_duplicados)
 
 def matplotlib():
     st.title("Matplotlib")
