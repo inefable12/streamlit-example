@@ -1,54 +1,35 @@
-import altair as alt
-import numpy as np
-import pandas as pd
 import streamlit as st
 
-"""
-# Welcome to Streamlit!
+def main():
+    st.title("Tecnología al alcance de tus manos")
+    st.write("¡Bienvenido a nuestra página web sobre tecnología!")
 
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:.
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
+    st.header("Últimas noticias")
+    st.write("Aquí encontrarás las últimas noticias sobre tecnología.")
 
-In the meantime, below is an example of what you can do with just a few lines of code:
-"""
+    st.subheader("1. Presentación del nuevo smartphone X")
+    st.write("La compañía X ha presentado su último smartphone con tecnología de vanguardia.")
 
-num_points = st.slider("Number of points in spiral", 1, 10000, 1100)
-num_turns = st.slider("Number of turns in spiral", 1, 300, 31)
+    st.subheader("2. Lanzamiento de la nueva consola Y")
+    st.write("La esperada consola Y ha sido lanzada al mercado con un potente hardware.")
 
-indices = np.linspace(0, 1, num_points)
-theta = 2 * np.pi * num_turns * indices
-radius = indices
+    st.header("Artículos destacados")
+    st.write("Descubre nuestros artículos destacados sobre tecnología.")
 
-x = radius * np.cos(theta)
-y = radius * np.sin(theta)
+    st.subheader("1. Cómo mejorar la seguridad en línea")
+    st.write("Consejos y trucos para proteger tu privacidad en internet.")
 
-df = pd.DataFrame({
-    "x": x,
-    "y": y,
-    "idx": indices,
-    "rand": np.random.randn(num_points),
-})
+    st.subheader("2. Introducción a la inteligencia artificial")
+    st.write("Aprende los conceptos básicos de la inteligencia artificial y su aplicación en la vida cotidiana.")
 
-st.altair_chart(alt.Chart(df, height=700, width=700)
-    .mark_point(filled=True)
-    .encode(
-        x=alt.X("x", axis=None),
-        y=alt.Y("y", axis=None),
-        color=alt.Color("idx", legend=None, scale=alt.Scale()),
-        size=alt.Size("rand", legend=None, scale=alt.Scale(range=[1, 150])),
-    ))
+    st.header("Recursos útiles")
+    st.write("Encuentra recursos útiles sobre tecnología.")
 
+    st.subheader("1. Guía de programación para principiantes")
+    st.write("Una guía paso a paso para empezar a programar desde cero.")
 
-st.write("Estadística de goles de Messi")
+    st.subheader("2. Herramientas de diseño gráfico gratuitas")
+    st.write("Descubre herramientas gratuitas para crear diseños impresionantes.")
 
-# Cargar los datos desde la página web
-#tablas = pd.read_html('https://players.fcbarcelona.com/es/jugador/548-messi-lionel-andres-messi-cuccitini')
-#st.write(tablas[0])
-
-st.write (pd.DataFrame({'Temas': ['Python y redes neuronales artificiales',
-                                  'Procesamiento de Lenguaje Natural', 
-                                  'Llama 2 y ChatGPT','IA generadora de imágenes'], 
-                        'Horas': ["2", "2", 
-                                   "2", "2"]}))
-
+if __name__ == "__main__":
+    main()
