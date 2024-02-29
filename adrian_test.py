@@ -14,7 +14,7 @@ def inicio():
     st.write("Inserta tu url de una imagen:")
     st.image("https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg")
 
-    st.image("https://media.licdn.com/dms/image/D4E22AQFrqH8gAfmM0g/feedshare-shrink_800/0/1708927054806?e=1712188800&v=beta&t=LcHP_egTn6xAXVv39F6ykLVzItR8JUiKqExwrE6py7s")
+    st.image("PES.gif")
 
 def numpy():
     st.title("Numpy")
